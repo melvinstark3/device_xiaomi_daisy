@@ -212,6 +212,9 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 # We modify several neverallows, so let the build proceed
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# Thermal
+USE_DEVICE_SPECIFIC_THERMAL := true
+
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_USES_AOSP_WLAN_HAL := true
