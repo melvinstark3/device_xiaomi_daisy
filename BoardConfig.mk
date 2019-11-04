@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/sakura
+DEVICE_PATH := device/xiaomi/daisy
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -40,13 +40,13 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := sakura_defconfig
+TARGET_KERNEL_CONFIG := daisy_defconfig
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 firmware_class.path=/vendor/firmware_mnt/image androidboot.usbconfigfs=true
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 firmware_class.path=/vendor/firmware_mnt/image androidboot.usbconfigfs=true androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+NEED_KERNEL_MODULE_SYSTEM := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 TARGET_KERNEL_VERSION := 4.9
 
@@ -140,13 +140,6 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # Filesystem
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
-BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware \
-    /mnt/vendor/persist:/persist
-TARGET_COPY_OUT_VENDOR := vendor
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # FM
@@ -162,22 +155,26 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8953
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_msm8953
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Partitions
+
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2684354560
 BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
-BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 25765043200 # 25765059584 - 16384
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
-TARGET_USES_MKE2FS := true
+BOARD_HAS_REMOVABLE_STORAGE := true
+BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/dsp:/dsp \
+    /vendor/firmware_mnt:/firmware \
+    /mnt/vendor/persist:/persist
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
@@ -206,15 +203,16 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # System As Root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
-BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init root=/dev/dm-0
-BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/mmcblk0p54\"
+BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_NO_RECOVERY := true
+
+# Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_VENDOR_MOVE_ENABLED := true
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # We modify several neverallows, so let the build proceed
 SELINUX_IGNORE_NEVERALLOWS := true
-
-# Treble
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
@@ -233,8 +231,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_FEATURE_AWARE := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/sakura/BoardConfigVendor.mk
--include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+-include vendor/xiaomi/daisy/BoardConfigVendor.mk
 
 # OTA Assert
-TARGET_OTA_ASSERT_DEVICE := sakura,sakura_india
+TARGET_OTA_ASSERT_DEVICE := daisy
