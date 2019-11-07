@@ -20,61 +20,38 @@ vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
-
 # Audio
 etc/permissions/audiosphere.xml
 framework/audiosphere.jar
-
-# Audio ACDB - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
-vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb|6291d5e7457a962d9ba7bc0b3a33392abfe2cb27
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|71d06907c9fe8c123d6390a4478fce02868d0ff6
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|d2bdb61a06db632f2f15bda7a90334ae51624ded
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|8128588f77afc8fc9b1d7f3a64e83b18b110b22c
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|be4871b20fd45fc8ac5edaf8c19643b78eeb0276
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|7e7d37c292a2b081eaa8b6c0ea88f3bb834a0cf4
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|cd739f7132b585ee95afab2db168a2c3f353875c
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|8bec81e255420fdee9507081dd12779dd27c2b78
-vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|3a5b3e291b1ee87221c12524791b58b6131b86c1
-
-# Audio - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
-vendor/lib/libacdb-fts.so|f140cc5c13855f411d9b944316828b42dd6b7d75
-vendor/lib/libacdbloader.so|52fb25441a742d744f6574d1065ae1b822769c48
-vendor/lib/libacdbrtac.so|8a469a26ed1ecff8e22ee141d98bde97513a6212
-vendor/lib/libadiertac.so|e8e2c208abafc6d6c34717aee3d822bfb3a23f76
-vendor/lib/libadm.so|01e2316dfa1afcb000984e9f68903ba6a1220159
-vendor/lib/libaudcal.so|5a6b0fa75e274b07f2dabdcc7381879e1a59898c
-vendor/lib/libaudioalsa.so|920603e464d518c2a46daf1063a65f45f0236d72
-vendor/lib/libdrc.so|7db89c6858c928457a8731d90ba874420972ec9b
-vendor/lib/libqtigef.so|fc40d4dbae0389afed79d2fcb481d1a49c63b749
-vendor/lib/libsurround_3mic_proc.so|832adfad9f3d414234f1b4cfd32b196fe4082bb9
-vendor/lib/soundfx/libqcbassboost.so|0a730813a7335208a5368f48de4790abda536c59
-vendor/lib/soundfx/libqcreverb.so|3cbf222a205e4ccbe812fc69d580abd2237e64d5
-vendor/lib/soundfx/libqcvirt.so|8f60a539fe18de5944d5f1dcd6d0ec5e56b336ea
-vendor/lib64/libacdb-fts.so|1a298a90fe8007fe1a3b352ff7d19ae73734f3cc
-vendor/lib64/libacdbloader.so|2ecf30ba0171aab7fdc720446238d48048cf6b7e
-vendor/lib64/libacdbrtac.so|c44ff9b9aa63e34ca1b77a5f0bfb6a5e50585048
-vendor/lib64/libadiertac.so|aeaf6f057d26acf342609c714213e1c9b3409774
-vendor/lib64/libaudcal.so|96c43cbe0ac304ea128def709d7f3ea99db7f260
-vendor/lib64/libaudioalsa.so|4a27694b5a6842609a2f2572476b7af032ec7201
-vendor/lib64/libqtigef.so|79e811fd04172b0afda1229d182014be28a146b2
-vendor/lib64/soundfx/libqcbassboost.so|0b92d65381d9722c579ccfda12f86c7e3fcaedd1
-vendor/lib64/soundfx/libqcvirt.so|815b3a7cd762cdb6f162dde12c866acb23cdd022
-
+# Audio - from Sakura
+vendor/lib/hw/audio.primary.msm8953.so|BA830639280C8E0151CC77A4D4EAFCBE9DC560E6
+vendor/lib/libaudio_log_utils.so|C0187996E4AA81683518645D1E1931AFEA5491DE
+vendor/lib/libtinycompress_vendor.so|FCB516620A215B7CB2AFEB2626599F69715A3C45
+vendor/lib64/hw/audio.primary.msm8953.so|94A255A6D9B20B80C190B9F1ADDE9C8C79808046
+vendor/lib64/libaudio_log_utils.so|7200B1D05406530EF20FB8AC1BFD2B2E1845D0DD
+vendor/lib64/libtinycompress_vendor.so|27487B2C33AFD2704DEC9A90B6428955AC1E08E8
+# Audio ACDB - from Sakura
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|5438A8AE33D7F323173779BB81EE0AC42DA879E6
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|AC77C80D2DDC5853F9BCDEB599D4F0C0AD8CDB58
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|279DC326A549DF780082151793ADDE266FEDB480
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|AE8AC3DCE358DBFEACB90B736793D5CA023AA9DB
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|144C397B093137A3AF9CC618A6F5434DA4A01D08
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|DF515758FCD2D5EB6EDFAD627D2C02642D3B5220
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|BA3D7670485F5E3F5D0F4B5753873875408E0746
+vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|B780C7D8FDD350A3F7AEFFAA0BCF311F5FDDA0F6
+x
 # Audio Dirac - from Unknown
 vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
 vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
 vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
-
 # ANT+ (system) - from enchilada - PKQ1.180716.001/1904032100
 lib64/com.qualcomm.qti.ant@1.0.so|7b03f4a99e2153a6b0a9bce1ca84f7c7577ec4b1
 -lib64/libantradio.so|fb958cb68c99c71455f969afdf96225f5110f0df
 lib/com.qualcomm.qti.ant@1.0.so|0072c1caf854732b64365702bba060597cd5d333
 -lib/libantradio.so|7506f2577f2f1068688b623ca85e432be9c3dac9
-
 # ANT+ (vendor) - from enchilada - PKQ1.180716.001/1904032100
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|30e9721d990e7fe018f0397e7ed5fff4a688400e
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|3facdbf7d1204ae99cf4da813233dfea2492754f
-
 # Bluetooth - from sakura
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/wcnss_filter
@@ -82,11 +59,9 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libbt-hidlclient.so
-
 # Bluetooth (aptX) - from crosshatch - PQ3A.190505.002/5450365
 lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
 lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
-
 # Camera Actuators - from sakura
 vendor/lib/libactuator_ad5816g.so
 vendor/lib/libactuator_ad5823.so
@@ -108,7 +83,6 @@ vendor/lib/libactuator_sakura_dw9714v_ofilm.so
 vendor/lib/libactuator_sakura_dw9714v_sunny.so
 vendor/lib/libactuator_vince_dw9714v_ofilm.so
 vendor/lib/libactuator_vince_dw9763_sunny.so
-
 # Camera Chromatix - from sakura
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
@@ -665,7 +639,6 @@ vendor/lib/libchromatix_ov12a10_sunny_sakura_snapshot.so
 vendor/lib/libchromatix_ov12a10_sunny_sakura_video_4k.so
 vendor/lib/libchromatix_ov12a10_sunny_sakura_zsl_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_sakura_zsl_video_dw9763.so
-
 vendor/lib/libchromatix_ov12a10_sunny_vince_4k_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_4k_video_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_common.so
@@ -718,7 +691,6 @@ vendor/lib/libchromatix_ov12a10_sunny_vince_snapshot.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_video_4k.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_zsl_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_zsl_video_dw9763.so
-
 vendor/lib/libchromatix_ov13850_common.so
 vendor/lib/libchromatix_ov13850_cpp_ds_chromatix.so
 vendor/lib/libchromatix_ov13850_cpp_hfr_120.so
@@ -1203,7 +1175,6 @@ vendor/lib/libchromatix_s5k3p8sp_cpp_video.so
 vendor/lib/libchromatix_s5k3p8sp_postproc.so
 vendor/lib/libchromatix_s5k3p8sp_preview.so
 vendor/lib/libchromatix_s5k3p8sp_snapshot.so
-
 vendor/lib/libchromatix_sakura_cn_imx486_ofilm_common.so
 vendor/lib/libchromatix_sakura_cn_imx486_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_sakura_cn_imx486_ofilm_cpp_hfr_60.so
@@ -1330,7 +1301,6 @@ vendor/lib/libchromatix_sakura_cn_s5k5e8_sunny_preview.so
 vendor/lib/libchromatix_sakura_cn_s5k5e8_sunny_snapshot.so
 vendor/lib/libchromatix_sakura_cn_s5k5e8_sunny_zsl_preview_3a.so
 vendor/lib/libchromatix_sakura_cn_s5k5e8_sunny_zsl_video_3a.so
-
 vendor/lib/libchromatix_sakura_factory_imx486_ofilm_common.so
 vendor/lib/libchromatix_sakura_factory_imx486_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_sakura_factory_imx486_ofilm_cpp_hfr_60.so
@@ -1688,7 +1658,6 @@ vendor/lib/libchromatix_sakura_s5k5e8_sunny_preview.so
 vendor/lib/libchromatix_sakura_s5k5e8_sunny_snapshot.so
 vendor/lib/libchromatix_sakura_s5k5e8_sunny_zsl_preview_3a.so
 vendor/lib/libchromatix_sakura_s5k5e8_sunny_zsl_video_3a.so
-
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_cpp_hfr_60.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_cpp_hfr_90.so
@@ -2003,7 +1972,6 @@ vendor/lib/libchromatix_vince_ov5675_qtech_preview.so
 vendor/lib/libchromatix_vince_ov5675_qtech_snapshot.so
 vendor/lib/libchromatix_vince_ov5675_qtech_zsl_preview_3a.so
 vendor/lib/libchromatix_vince_ov5675_qtech_zsl_video_3a.so
-
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dummyalgo.so
@@ -2077,7 +2045,6 @@ vendor/lib/libmmcamera_vince_imx486_ofilm.so
 vendor/lib/libmmcamera_vince_ov12a10_sunny.so
 vendor/lib/libmmcamera_vince_ov5675_ofilm.so
 vendor/lib/libmmcamera_vince_ov5675_qtech.so
-
 # Camera firmware - from sakura
 vendor/firmware/cpp_firmware_v1_8_0.fw
 vendor/firmware/cpp_firmware_v1_5_0.fw
@@ -2090,7 +2057,6 @@ vendor/firmware/cpp_firmware_v1_12_0.fw
 vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_1_6.fw
-
 # Camera HIDL - from sakura (HACK NEEDED)
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
 vendor/lib/camera.msm8953.shim.so
@@ -2106,7 +2072,6 @@ vendor/lib64/camera.device@3.3-impl.so
 vendor/lib64/camera.device@3.4-external-impl.so
 vendor/lib64/camera.device@3.4-impl.so
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
-
 # Camera libs (oreo) - from wayne for MIUI camera
 lib/libskia.so:vendor/lib/libskia.so|cbfb76fc85a300c7b7e35e4d54581eeeb2955e7f
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
@@ -2124,16 +2089,12 @@ vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
 -vendor/lib/libts_face_beautify_hal.so|4b8700003fd32f5a6a650821b86ed33e73992d10
 vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
 vendor/lib/libvidhance_gyro.so|b5e3fd3ce40e3c2ea2a225fe05704052474b9ddd
-
 # Camera OIS
 vendor/lib/libois_lc898122.so
-
 # Camera QCOM Daemon - from sakura
 vendor/bin/mm-qcamera-daemon
-
 # Camera QCOM libs - from Sakura MIUI PIE RELEASE
 vendor/lib/hw/camera.msm8953.so|4b2ca77a95bd3252d5474959fe2585c06cf00d35
-
 # Camera QCOM Libraries - from sakura
 vendor/bin/mm-qcamera-app
 vendor/lib/libarcsoft_beautyshot.so
@@ -2160,7 +2121,6 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libvidhance.so
 vendor/lib/libXMFD_AgeGender.so
-
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
@@ -2232,7 +2192,6 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
 vendor/lib64/libmmcamera2_q3a_core.so
@@ -2240,17 +2199,14 @@ vendor/lib64/libmmcamera2_stats_algorithm.so
 vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
-
 -framework/com.qualcomm.qti.camera.jar
 lib/vendor.qti.hardware.camera.device@1.0.so
 lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
-
 lib/libicuuc.so:vendor/lib/libicuuc-v27.so
 lib/libminikin.so:vendor/lib/libminikin-v27.so
 vendor/lib/libMiWatermark.so
-
 # Camera XML Configs - from sakura
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/csidtg_camera.xml
@@ -2297,10 +2253,8 @@ vendor/etc/camera/vince_ov5675_ofilm_chromatix.xml
 vendor/etc/camera/vince_ov5675_ofilm_chromatix_india.xml
 vendor/etc/camera/vince_ov5675_qtech_chromatix.xml
 vendor/etc/camera/vince_ov5675_qtech_chromatix_india.xml
-
 # Charger - from sakura
 vendor/bin/hvdcp_opti
-
 # CNE - from sakura
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
@@ -2380,15 +2334,12 @@ vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libwqe.so
 vendor/lib64/libxml.so
-
 # Consumer IR - from sakura
 vendor/lib64/hw/consumerir.default.so
-
 # Display Calibration - from sakura
 vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_otm1911_fhdplus_video_mode_dsi_panel.xml
-
 # DPM - from sakura
 lib/com.qualcomm.qti.dpm.api@1.0.so
 lib/libdpmctmgr.so
@@ -2399,7 +2350,6 @@ vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib/libdpmqmihal.so
-
 # DRM - from sakura
 vendor/bin/qseecomd
 vendor/lib/libQSEEComAPI.so
@@ -2415,18 +2365,14 @@ vendor/lib64/librpmb.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
-
 # DRM (Widevine) - from mata QP1A.190711.107
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|5c2f83943a1c8680cde657e22425f665ab438714
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
 vendor/lib64/libwvhidl.so|ff967a2aab27d75eb858c6a7a269d4090af9f377
-
 # Fingerprint firmware - from Sakura MIUI PIE Beta Rom
 etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
-
 # Fingerprint - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
 lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so|00d41f88a980241b29267e16419704f8e05c5bcd
-
 # Fingerprint - from Sakura MIUI PIE Beta Rom
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 vendor/etc/permissions/com.fingerprints.extension.xml
@@ -2439,17 +2385,14 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 lib/android.hardware.biometrics.fingerprint@2.1.so
 lib64/android.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-
 # FM Radio - from sakura
 vendor/bin/fm_qsoc_patches
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
-
 # Gatekeeper - from sakura
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
@@ -2457,7 +2400,6 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/gatekeeper.msm8953.so
 vendor/lib64/hw/gatekeeper.msm8953.so
-
 # GPS - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
 vendor/bin/hw/vendor.qti.gnss@1.0-service|049201d8e22064b87eb52df208d8cda7066d140a
 vendor/bin/loc_launcher|23a4470552c0c418662a7d91fa7f593bee767459
@@ -2498,7 +2440,6 @@ vendor/lib64/vendor.qti.gnss@1.1.so|a622c409e1d20d2799904e47d8fb07753e830d7a
 vendor/lib64/vendor.qti.gnss@1.2.so|104f245c358ab202a57211f99898406cd5ad8e0e
 vendor/lib64/vendor.qti.gnss@2.0.so|b3f7ae76d4db00edce0c4f5a7084d7abeac0180a
 vendor/lib64/vendor.qti.gnss@2.1.so|eb908fd65d8b9d1f9cac629815f7adfb48361d16
-
 # Graphics - from Sakura MIUI PIE RELEASE
 vendor/lib/egl/eglSubDriverAndroid.so|8468cd8e90386a102d202a48b0c69045fed4af21
 vendor/lib/egl/libEGL_adreno.so|6b996ad062d337edd07a3409f34605815a75bf80
@@ -2550,11 +2491,9 @@ vendor/lib64/libsdm-diag.so|7ab5d2a980029ac9bd20fe68656823b21e483e11
 -vendor/lib64/libsdm-disp-vndapis.so|6ae24866bbd413ed112778650c8fd7a2631cb1a9
 vendor/lib64/libsdmextension.so|e91aaf852df780e42bb083c3089f5b42c87c49f7
 vendor/lib64/libtinyxml2_1.so|b743b93bbb47bb2d80322fcfb985b7b8c696fa1b
-
 # Graphics (HDR) - from Sakura MIUI PIE RELEASE
 vendor/lib/libhdr_tm.so|8060a5d9ed0283c7b89716165ba8af4b86ef0210
 vendor/lib64/libhdr_tm.so|df15d487e73560f81017bcf4a73c28c9697b1ed9
-
 # Graphics (Postprocessing) - from Sakura MIUI PIE RELEASE
 etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
 framework/com.qti.snapdragon.sdk.display.jar|db5b8dd09100aab238b5972192f5ab944f38208c
@@ -2577,11 +2516,9 @@ vendor/lib64/libdisp-aba.so|2b9a85de013e956f1adfaf00146a865efb7077c4
 vendor/lib64/vendor.display.color@1.0.so|ec75654927c63b74c7f8d0760fa463f0e8287f25
 vendor/lib64/vendor.display.postproc@1.0.so|b95e9f990a207d5c62db4d66f5aaf088adc02ba8
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|de6aade2863c03d5b3e234bf87bd398b8f23b13d
-
 # Graphics (Vulkan) - from Sakura MIUI PIE RELEASE
 vendor/lib/hw/vulkan.msm8953.so|6259874ee4fe1a414b5e2109ec63af55a70d3733
 vendor/lib64/hw/vulkan.msm8953.so|e1905916771354829868a65e6757615c7de20b71
-
 # Graphics firmware - from Sakura MIUI PIE RELEASE
 vendor/firmware/a506_zap.b00|c45a7b34456844f5deb73e2dce79cbfcfb9ae71c
 vendor/firmware/a506_zap.b01|374b5c4a2212b2636d5dfc2deda66b56b6bf2d03
@@ -2589,10 +2526,8 @@ vendor/firmware/a506_zap.b02|b79957c47f0a6757ac1d721dbe06551508454634
 vendor/firmware/a506_zap.mdt|621df918f1d6ef0a0c3fe25c8f6a58d56af4b26a
 vendor/firmware/a530_pfp.fw|137b74a30e664f387fcd1e5562474a6c5d8dd6b4
 vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
-
 # Ipacm - from sakura
 vendor/bin/ipacm-diag
-
 # Keymaster - from sakura
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
@@ -2604,7 +2539,6 @@ vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
-
 # Listen - from sakura
 vendor/lib/hw/sound_trigger.primary.msm8953.so
 vendor/lib/libadpcmdec.so
@@ -2612,7 +2546,6 @@ vendor/lib/libsmwrapper.so
 vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib64/hw/sound_trigger.primary.msm8953.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
-
 # Media - from sakura
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmmosal_proprietary.so
@@ -2647,11 +2580,9 @@ vendor/lib64/libOmxWmaDec.so
 -vendor/lib64/libgpustats.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libvpplibrary.so
-
 # Modem - from sakura
 vendor/lib/libwms.so
 vendor/lib64/libwms.so
-
 # Perf - from sakura
 lib/vendor.qti.hardware.perf@1.0.so
 lib64/vendor.qti.hardware.perf@1.0.so
@@ -2673,13 +2604,11 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
-
 # Peripheral manager - from sakura
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
-
 # Power-off alarm - from sakura
 framework/vendor.qti.hardware.alarm-V1.0-java.jar
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -2688,10 +2617,8 @@ vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
-
 # Power-off charging daemon
 -sbin/charger:bin/chargeonlymode|664dfa548b81cac348f1699222160f8d2b4d247c
-
 # QCOM Boost framework blobs
 bin/perfservice
 etc/init/perfservice.rc
@@ -2720,7 +2647,6 @@ vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib64/libqti-iopd-client.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
-
 # QMI - from sakura
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
@@ -2759,7 +2685,6 @@ vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
-
 # Qmmi
 -app/Qmmi/Qmmi.apk
 bin/mmi
@@ -2768,7 +2693,6 @@ lib/libmmi.so
 lib/libmmi_jni.so
 lib64/libmmi.so
 lib64/libmmi_jni.so
-
 # Radio - from sakura
 -app/datastatusnotification/datastatusnotification.apk
 -app/embms/embms.apk
@@ -2786,7 +2710,6 @@ framework/qcrilhook.jar
 framework/qti-telephony-common.jar
 vendor/bin/ATFWD-daemon
 vendor/bin/hw/qcrild
-vendor/bin/ipacm-diag
 vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qti
@@ -2869,17 +2792,14 @@ vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/radio/qcril_database/qcril.db
-
 # Radio - IMS - from raphael-user 10 QKQ1.190716.003 V10.4.6.0.QFKCNXM release-keys
 -product/priv-app/ims/ims.apk|e33e718bb02facea862ab56384c4e300a1826dbf
-
 # Radio (IMS) - from sakura
 -app/imssettings/imssettings.apk
 framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/com.qualcomm.qti.imscmservice@2.0.so
 lib/com.qualcomm.qti.imscmservice@2.1.so
-lib/libdiag_system.so
 lib/lib-imscamera.so
 lib/lib-imsvideocodec.so
 lib/lib-imsvtextutils.so
@@ -2892,7 +2812,6 @@ lib/vendor.qti.ims.rcsconfig@1.0.so
 lib64/com.qualcomm.qti.imscmservice@1.0.so
 lib64/com.qualcomm.qti.imscmservice@2.0.so
 lib64/com.qualcomm.qti.imscmservice@2.1.so
-lib64/libdiag_system.so
 lib64/lib-imscamera.so
 lib64/lib-imsvideocodec.so
 lib64/lib-imsvt.so
@@ -2927,7 +2846,6 @@ vendor/lib/lib-uceservice.so
 vendor/lib/vendor.qti.ims.callinfo@1.0.so
 vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib/vendor.qti.imsrtpservice@1.0.so
-vendor/lib/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so
@@ -2949,8 +2867,6 @@ vendor/lib64/lib-uceservice.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so
-vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
-
 # Sensors - from sakura
 vendor/bin/sensors.qti
 vendor/lib/hw/activity_recognition.msm8953.so
@@ -2963,20 +2879,17 @@ vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libsensor_user_cal.so
 vendor/lib64/sensors.ssc.so
-
 # Thermal - from Onclite PKQ1.181021.001/V10.2.7.0.PFLCNXM
 vendor/bin/thermal-engine|562035759ae60b3c5267a01293f1aeaa3f40c44b
 -vendor/lib/libthermalclient.so|241d1e751b3a96c67ac5b618ef38bb39d2a94fa7
 -vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
 vendor/lib/libthermalfeature.so|1f1eb616ba26b309a2fda7de40c2163a4acaaa35
 vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
-
 # Time services - from raphael-user 10 QKQ1.190716.003 V10.4.6.0.QFKCNXM release-keys
 -vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
 vendor/bin/time_daemon|2652ed04ebe55219b5da38db021d43b38e9227d3
 vendor/lib/libtime_genoff.so|cd8a5cc7ccc598e3c3308980c45acb804baa5986
 vendor/lib64/libtime_genoff.so|746db5267fde236de820fa7d887386f65aea7a8a
-
 # TUI - from sakura
 lib/vendor.qti.hardware.tui_comm@1.0.so
 lib64/vendor.qti.hardware.tui_comm@1.0.so
@@ -2984,10 +2897,8 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
-
 # USB firmware - sakura
 etc/firmware/ice40.bin
-
 # Wi-Fi - from sakura
 lib64/libwifikeystorehalext.so
 lib64/vendor.qti.hardware.wifi.hostapd@1.0.so
@@ -3003,7 +2914,6 @@ vendor/lib64/libwifi-hal-qcom.so
 vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so
 vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
 vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so
-
 # Wi-Fi Display - from sakura
 bin/wfdservice
 etc/init/wfdservice.rc
