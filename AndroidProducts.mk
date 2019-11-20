@@ -14,9 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/stag_daisy.mk
-
-COMMON_LUNCH_CHOICES := \
-    stag_daisy-user \
-    stag_daisy-userdebug \
-    stag_daisy-eng
+    $(LOCAL_DIR)/potato_daisy.mk
