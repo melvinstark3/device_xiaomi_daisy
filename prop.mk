@@ -68,6 +68,8 @@ persist.vendor.btstack.enable.splita2dp=false
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
+camera.disable_treble=0 \
+persist.camera.CDS=on \
 persist.vendor.camera.display.lmax=1280x720 \
 persist.vendor.camera.display.umax=1920x1080 \
 camera.lowpower.record.enable=1 \
