@@ -21,6 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+#Soong
+PRODUCT_BOARD_PLATFORM := msm8996
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Set boot SPL
 BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
